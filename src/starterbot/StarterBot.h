@@ -7,10 +7,6 @@
 class StarterBot
 {
     MapTools m_mapTools;
-    bool missionStarted = false;
-    bool hallucination1Cast = false;
-    bool hallucination2Cast = false;
-    bool unitsCargaed = false;
 
 public:
 
@@ -21,10 +17,6 @@ public:
     void trainAdditionalWorkers();
     void buildAdditionalSupply();
     void drawDebugInformation();
-    void executeMission();
-    void castHallucinations();
-    void loadShuttle();
-    void moveToDestination();
 
     // functions that are triggered by various BWAPI events from main.cpp
 	void onStart();
